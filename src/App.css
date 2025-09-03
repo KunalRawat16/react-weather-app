@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.weather-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.weather-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-box {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-box:focus {
+  border-color: #0077ff;
+}
+
+.search-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #005fcc;
+}
+
+.weather-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.city-name {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #0077ff;
+}
+
+.condition {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.description {
+  font-size: 1rem;
+  font-style: italic;
+  color: #777;
+}
+
+/* 🌐 Responsive Styles */
+@media (max-width: 768px) {
+  .weather-container {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-box {
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+  }
+
+  .search-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  .temp {
+    font-size: 2rem;
+  }
+
+  .condition {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-container {
+    margin: 1rem;
+    padding: 0.75rem;
+  }
+
+  .weather-title {
+    font-size: 1.25rem;
+  }
+
+  .city-name {
+    font-size: 1.25rem;
+  }
+
+  .temp {
+    font-size: 1.75rem;
+  }
+
+  .condition {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+.weather-icon {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.sunny {
+  color: #fbc02d;
+}
+
+.cloudy {
+  color: #90a4ae;
+}
+
+.rainy {
+  color: #0077ff;
+}
+
+.snowy {
+  color: #00bcd4;
+}
+
+.foggy {
+  color: #9e9e9e;
+}
+
+.weather-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* background: url("src\\assets\\wallpaper.jpg") no-repeat center/cover; */
+  color: #fff;
+}
