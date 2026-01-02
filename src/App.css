@@ -188,20 +188,35 @@
   color: #fff;
 }
 
-body{
-
-  background: url("../public/bg.jpg");
-  /* background: url("bg.jpg"); */
+/* Body background - mobile first */
+body {
+  background: url("../public/bg.jpg") no-repeat center center;
   background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  body {
+    background-position: center top;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-position: center center;
+  }
+}
+
+/* Large devices (desktop) */
+@media (min-width: 769px) {
+  body {
+    background-position: center center;
+  }
 }
 
 
-blur-container {
-  /* Apply the blur effect */
-  filter: blur(5px);
-  /* Other styling */
-  width: 300px;
-  height: 200px;
-  background-color: #ccc; /* Or background-image */
-  padding: 20px;
-}
+
