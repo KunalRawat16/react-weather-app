@@ -189,11 +189,9 @@
 }
 
 body{
-<<<<<<< HEAD
+
   background: url("../public/bg.jpg");
-=======
-  background: url("bg.jpg");
->>>>>>> v1/main
+  /* background: url("bg.jpg"); */
   background-size: cover;
 }
 
