@@ -183,6 +183,23 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
   /* background: url("src\\assets\\wallpaper.jpg") no-repeat center/cover; */
   color: #fff;
+}
+
+body{
+  background: url("bg.jpg");
+  background-size: cover;
+}
+
+
+blur-container {
+  /* Apply the blur effect */
+  filter: blur(5px);
+  /* Other styling */
+  width: 300px;
+  height: 200px;
+  background-color: #ccc; /* Or background-image */
+  padding: 20px;
 }

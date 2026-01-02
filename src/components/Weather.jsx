@@ -49,7 +49,7 @@ const Weather = () => {
 
   return (<>
   
-    <div className="weather-container">
+    <div className="weather-container blur-container">
       <h2 className="weather-title">🌍 Weather Finder</h2>
       <div className="search-box">
         <input
@@ -68,7 +68,7 @@ const Weather = () => {
         <div className="weather-card">
           {getWeatherIcon(weather.data.weather[0].main)}
           <h3 className="city-name">{weather.data.name}</h3>
-          <p className="temp">{Math.round(weather.data.main.temp)}°C</p>
+          <p className="temp">{Math.round(weather.data.main.temp - 273.15)}°C</p>
           <p className="condition">{weather.data.weather[0].main}</p>
           <p className="description">{weather.data.weather[0].description}</p>
         </div>
